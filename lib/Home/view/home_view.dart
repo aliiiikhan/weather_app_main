@@ -69,9 +69,9 @@ class _HomeViewState extends HomeViewModel {
                           return const CircularProgressIndicator();
                         } else if (snapshot.hasError) {
                           return const Center(
-                              child: Text('Error fetching data'));
+                              child: Text('fetching data is not found'));
                         } else if (!snapshot.hasData) {
-                          return const Center(child: Text('No data available'));
+                          return const Center(child: Text('data is not available'));
                         } else {
                           return SingleChildScrollView(
                             scrollDirection: Axis.horizontal,
